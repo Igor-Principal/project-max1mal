@@ -1,12 +1,13 @@
 /* Reset styles */
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   margin: 0;
+  padding-left: 0;
 }
 
 p:last-child {
@@ -14,8 +15,8 @@ p:last-child {
 }
 
 ul {
+  padding-left: 0;
   margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -26,10 +27,51 @@ a {
 
 button {
   cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
+}
+
+address {
+  font-style: normal;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+input {
+  font-family: inherit;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.body {
+  font-family: Roboto, sans-serif;
+  background-color: #ffffff;
 }
