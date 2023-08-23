@@ -76,3 +76,7 @@ fieldset {
   background-color: #ffffff;
   color: #0A224A;
 }
+
+.link {
+  text-decoration: none;
+}
