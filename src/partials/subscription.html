@@ -1,0 +1,88 @@
+<section class="sub-section">
+  <div class="container">
+    <div class="sub-text-content">
+      <h1 class="sub-title">Newsletter</h1>
+      <p class="sub-text">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="sub-form">
+        <label for="user-name" class="sub-label">
+          <input
+            type="text"
+            class="sub-input"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+            required
+            minlength="2"
+            maxlength="16"
+          />
+        </label>
+        <label for="user-email" class="sub-label">
+          <input
+            type="email"
+            class="sub-input input-error"
+            name="user-email"
+            id="user-email"
+            placeholder="E-mail"
+          />
+          <svg class="input-error-icon" width="24" height="24">
+            <use
+              href="../img/Subscription/icons.svg#icon-subscription-input-error"
+            ></use>
+          </svg>
+        </label>
+  
+        <div class="sub-field-agreement">
+          <input
+            type="checkbox"
+            name="user-agreement"
+            id="user-agreement"
+            class="sub-check visually-hidden"
+            required
+            value="true"
+          />
+          <label for="user-agreement" class="sub-check-text">
+            <span class="sub-check-decor">
+              <svg class="sub-check-icon" width="13" height="13">
+                <use
+                  href="../img/Subscription/icons.svg#icon-subscription-check"
+                ></use>
+              </svg>
+            </span>
+            Agree to subscribe to the newsletter
+          </label>
+        </div>
+        <button type="submit" class="sub-btn">Send</button>
+    </div>
+      <picture class="sub-img">
+        <source
+          srcset="
+            ./img/Subscription/subscription-desc-1x.jpg 1x,
+            ./img/Subscription/subscription-desc-2x.jpg 2x
+          "
+          media="(min-width:1440px)"
+        />
+        <source
+          srcset="
+            ./img/Subscription/subscription-tab-1x.jpg 1x,
+            ./img/Subscription/subscription-tab-2x.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./img/Subscription/subscription-mob-1x.jpg 1x,
+            ./img/Subscription/subscription-mob-2x.jpg 2x
+          "
+          media="(min-width:320px)"
+        />
+        <img
+          src="./img/Subscription/subscription-desc-1x.jpg"
+          alt="Banking App"
+          width="704"
+        />
+      </picture>
+    </form>
+  </div>
+</section>

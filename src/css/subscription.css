@@ -1,0 +1,224 @@
+.sub-section {
+  padding: 64px 0;
+}
+
+.sub-text-content {
+  margin-bottom: 30px;
+}
+
+.sub-title {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sub-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.sub-label {
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.sub-input {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #b6b6b6;
+  outline: transparent;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sub-input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #d9d9d9;
+}
+
+.sub-input:hover,
+.sub-input:focus {
+  border-color: #0a224a;
+}
+
+.input-error-icon {
+  fill: #e74a3b;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.input-error:invalid {
+  color: #e74a3b;
+  border-color: #e74a3b;
+}
+
+.sub-field-agreement {
+  margin-bottom: 32px;
+}
+
+.sub-check-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #7a7a7a;
+}
+
+.sub-check-decor {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #b6b6b6;
+  margin-right: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  stroke: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sub-check:checked + .sub-check-text .sub-check-decor {
+  background-color: #0a224a;
+  border: none;
+  fill: transparent;
+  stroke: #ffffff;
+}
+
+.sub-check:focus + .sub-check-text .sub-check-decor {
+  border-color: #0a224a;
+}
+
+.sub-btn {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  min-width: 224px;
+  height: 50px;
+  border: none;
+  padding: 0 65px;
+  color: #ffffff;
+  background-color: #0a224a;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========================= MOBILE ===================== */
+
+@media screen and (min-width: 375px) {
+  .sub-section .container {
+    max-width: 375px;
+    padding: 0 16px;
+  }
+
+  .sub-check-decor {
+    margin-right: 8px;
+  }
+}
+
+/* ========================== TABLET ====================== */
+
+@media screen and (min-width: 768px) {
+  .sub-section {
+    padding: 100px 0;
+  }
+
+  .sub-section .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .sub-text-content {
+    margin-bottom: 64px;
+  }
+
+  .sub-title {
+    font-size: 32px;
+    line-height: 1.41;
+    text-align: start;
+    margin-bottom: 30px;
+  }
+
+  .sub-text {
+    display: block;
+    width: 536px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .sub-input {
+    width: 536px;
+  }
+
+  .sub-input::placeholder {
+    font-size: 18px;
+  }
+
+  .sub-field-agreement {
+    margin-bottom: 30px;
+  }
+
+  .sub-btn {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+/* ===================== DESCTOP ========================== */
+
+@media screen and (min-width: 1440px) {
+  .sub-section {
+    padding-bottom: 86px;
+  }
+
+  .sub-section .container {
+    max-width: 1160px;
+    display: flex;
+    column-gap: 100px;
+  }
+
+  .sub-text-content {
+    margin: 0;
+    position: relative;
+  }
+
+  .sub-title {
+    margin-bottom: 31px;
+  }
+
+  .sub-text {
+    margin-bottom: 21px;
+  }
+
+  .sub-label {
+    margin-bottom: 21px;
+  }
+
+  .sub-input {
+    height: 52px;
+  }
+
+  .sub-field-agreement {
+    margin-bottom: 31px;
+  }
+
+  .sub-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
