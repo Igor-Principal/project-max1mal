@@ -19,7 +19,6 @@
 }
 .hero-content-two {
   max-width: 312px;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -47,14 +46,11 @@
 .hero-btn {
   background-color: var(--blue-font);
   padding: 12px 65px;
-
   color: var(--white, #fff);
   font-family: Roboto;
   line-height: 1.33;
-
   border: none;
   outline: none;
-
   transition: background-color 250ms ease-in-out;
 }
 
