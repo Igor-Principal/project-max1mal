@@ -6,7 +6,6 @@
   color: var(--blue-font, #0a224a);
   font-family: Roboto;
   font-size: 28px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.5; /* 150% */
   text-transform: uppercase;
@@ -26,7 +25,6 @@
   color: var(--blue-font, #0a224a);
   font-family: Roboto;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.78; /* 177.778% */
   text-transform: uppercase;
@@ -36,7 +34,6 @@
   color: var(--blue-font, #0a224a);
   font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.29; /* 128.571% */
 }
@@ -46,7 +43,6 @@
   color: var(--blue-font, #0a224a);
   font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.43; /* 142.857% */
   margin: 0;
@@ -61,7 +57,15 @@
 .clients-review-3 {
   display: none;
 }
+@media screen and (min-width: 375px) {
+  .container {
+    width: 373px;
+  }
+}
 @media screen and (min-width: 768px) {
+  .container {
+    width: 766px;
+  }
   .clients-review-2 {
     display: block;
   }
@@ -72,7 +76,7 @@
     justify-content: center;
   }
   .clients-reviews-item {
-    width: 344px;
+    max-width: 344px;
     margin: 0;
   }
   .client-name {
@@ -92,8 +96,6 @@
   .clients-info {
     margin-bottom: 14px;
   }
-  .clients-img {
-  }
   .clients-img-png {
     width: 56px;
     height: 56px;
@@ -103,7 +105,10 @@
     height: 37px;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1438px;
+  }
   .clients-review-3 {
     display: block;
   }
