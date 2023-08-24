@@ -4,8 +4,7 @@
 }
 .footer-container {
   position: relative;
-  max-width: 375px;
-  padding: 36px 16px 16px;
+  padding: 36px 0;
 }
 .footer-nav-logo {
   display: inline-flex;
@@ -31,6 +30,10 @@
   font-weight: 400;
   line-height: 1.5em;
 }
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  text-decoration: underline;
+}
 .footer-address {
   margin-bottom: 64px;
 }
@@ -52,6 +55,16 @@
   font-weight: 400;
   letter-spacing: 0.16px;
 }
+.footer-address-link:hover,
+.footer-address-link:focus {
+  text-decoration: underline;
+}
+.footer-address-text {
+  color: var(--light-font, #fff);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+}
 .footer-social {
   position: absolute;
   right: 16px;
@@ -65,6 +78,12 @@
   width: 28px;
   height: 28px;
   fill: var(--light-font, #fff);
+}
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  fill: #0a224a;
+  background-color: #fff;
+  border-radius: 20%;
 }
 .footer-conditions {
   opacity: 0.6;
@@ -83,6 +102,16 @@
   letter-spacing: 1.188px;
   text-decoration-line: underline;
 }
+.footer-conditions-link:hover,
+.footer-conditions-link:focus {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 375px) {
+  .footer-container {
+    max-width: 373px;
+  }
+}
 
 /* --------------------- */
 /* ---- T A B L E T ---- */
@@ -90,8 +119,8 @@
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    padding: 36px 32px;
-    max-width: 768px;
+    padding: 36px 0;
+    max-width: 736px;
   }
   .footer-logo-icon {
     width: 127px;
@@ -132,6 +161,9 @@
   .footer-address-link {
     font-size: 19px;
   }
+  .footer-address-text {
+    font-size: 19px;
+  }
   .footer-social {
     right: 36px;
     top: 32px;
@@ -152,14 +184,14 @@
 
 @media screen and (min-width: 1440px) {
   .footer-container {
-    padding: 36px 60px;
-    max-width: 1440px;
+    padding: 36px 0;
+    max-width: 1350px;
   }
   .footer-nav-logo {
     margin-bottom: 39px;
   }
   .footer-nav {
-    left: 396px;
+    left: 351px;
     margin-bottom: 0;
   }
   .footer-nav-list {
