@@ -4,7 +4,8 @@
 }
 .footer-container {
   position: relative;
-  padding: 36px 0;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 .footer-nav-logo {
   display: inline-flex;
@@ -77,7 +78,10 @@
 .footer-social-icon {
   width: 28px;
   height: 28px;
+  border-radius: 20%;
   fill: var(--light-font, #fff);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-icon:hover,
 .footer-social-icon:focus {
@@ -119,7 +123,8 @@
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    padding: 36px 0;
+    padding-top: 36px;
+    padding-bottom: 36px;
     max-width: 736px;
   }
   .footer-logo-icon {
@@ -184,7 +189,8 @@
 
 @media screen and (min-width: 1440px) {
   .footer-container {
-    padding: 36px 0;
+    padding-top: 36px;
+    padding-bottom: 36px;
     max-width: 1350px;
   }
   .footer-nav-logo {
