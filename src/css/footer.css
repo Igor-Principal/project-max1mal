@@ -41,8 +41,8 @@
 }
 
 .footer-address-list:first-child {
-    margin-bottom: 35px;
-  }
+  margin-bottom: 35px;
+}
 .footer-address-item-mail {
   display: none;
 }
@@ -124,8 +124,8 @@
   }
   .footer-address-list:last-child {
     margin-bottom: 0;
-  margin-top: 24px;
-}
+    margin-top: 24px;
+  }
   .footer-address-item-mail {
     display: list-item;
   }
@@ -177,8 +177,8 @@
     margin-bottom: 0;
   }
   .footer-address-list:last-child {
-  margin-top: 0px;
-}
+    margin-top: 0px;
+  }
   .footer-social {
     right: 60px;
     top: 36px;
