@@ -53,6 +53,4 @@
     let expanded = heroSection.getAttribute('aria-expanded') === 'true' || 'false';
     heroSection.classList.toggle('hero-section-active');
   })
-
-  
 })();
