@@ -117,6 +117,11 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.sub-btn:hover,
+.sub-btn:focus {
+  background-color: #061835;
+}
+
 /* ========================= MOBILE ===================== */
 
 @media screen and (min-width: 375px) {
