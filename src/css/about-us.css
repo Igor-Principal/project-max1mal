@@ -71,8 +71,15 @@ line-height: 1.5;
     text-align: center;
     width: 170px;
 }
-
+@media screen and (min-width: 375px) {
+    .about-us .container {
+        width: 373px;
+    }
+}
 @media screen and (min-width: 768px) {
+    .about-us .container {
+        width: 736px;
+    }
     .about-us {
         padding-bottom: 100px;
         /* padding: 100px 17px; */
@@ -101,13 +108,11 @@ line-height: 1.5;
     }
 
 @media screen and (min-width: 1440px) {
-    .about-us {
-        width: 100%;
-        max-width: 1440px;
-    }
-    .section-about-container {
+    .about-us .container {
         display: flex;
         gap: 24px;
+        width: 100%;
+        max-width: 1350px;
     }
     .about-us-container {
         width: 100%;
