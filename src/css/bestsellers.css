@@ -100,6 +100,10 @@
     width: 1126px;
   }
 
+  .sellers-main-card,
+  .sellers-item {
+    margin-bottom: 0;
+  }
 
   .sellers-wrap {
     display: flex;
