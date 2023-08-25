@@ -1,5 +1,5 @@
 .prices {
-    padding-bottom: 94px;
+    padding: 94px 0;
 }
 
 .prices-item-title {
@@ -80,6 +80,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .prices {
+        padding: 130px 0;
+    }
+
     .prices-item-title {
         font-size: 32px;
         line-height: 1.4; 
