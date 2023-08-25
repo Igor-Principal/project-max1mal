@@ -19,8 +19,8 @@
     />
     <title>Minimal</title>
     
-    <script type="module" crossorigin src="/project-max1mal/assets/index-945f5a36.js"></script>
-    <link rel="stylesheet" href="/project-max1mal/assets/index-bc5f56f6.css">
+    <script type="module" crossorigin src="/project-max1mal/assets/index-29a06c2e.js"></script>
+    <link rel="stylesheet" href="/project-max1mal/assets/index-a639d158.css">
   </head>
   <body>
     <!-- Timothii -->
@@ -410,18 +410,23 @@
             minlength="2"
             maxlength="16"
           />
+          <svg class="name-error-icon" id="name-error" width="24" height="24">
+            <use
+              href="./img/Subscription/symbol-defs.svg#icon-subscription-input-error"
+            ></use>
+          </svg>
         </label>
         <label for="user-email" class="sub-label">
           <input
             type="email"
-            class="sub-input input-error"
+            class="sub-input email-error"
             name="user-email"
             id="user-email"
             placeholder="E-mail"
           />
-          <svg class="input-error-icon" width="24" height="24">
+          <svg class="email-error-icon" id="email-error" width="24" height="24">
             <use
-              href="../img/Subscription/icons.svg#icon-subscription-input-error"
+              href="./img/Subscription/symbol-defs.svg#icon-subscription-input-error"
             ></use>
           </svg>
         </label>
@@ -439,7 +444,7 @@
             <span class="sub-check-decor">
               <svg class="sub-check-icon" width="13" height="13">
                 <use
-                  href="../img/Subscription/icons.svg#icon-subscription-check"
+                  href="../img/Subscription/symbol-defs.svg#icon-subscription-check"
                 ></use>
               </svg>
             </span>
@@ -463,12 +468,13 @@
         />
         <img
           src="/project-max1mal/assets/subscription-desc-1x-3d62924b.jpg"
-          alt="Banking App"
+          alt="coffee table next to gray sofa"
           width="704"
         />
       </picture>
     </form>
   </div>
+  <script src="./js/validation.js"></script>
 </section>
 
     </main>
