@@ -12,8 +12,7 @@
   margin-bottom: 30px;
   text-align: center;
 }
-.clients-reviews-item {
-  padding: 24px;
+.review {
   border-radius: 8px;
   background: var(--white, #fff);
   width: 100%;
@@ -57,25 +56,99 @@
 .clients-review-3 {
   display: none;
 }
-@media screen and (min-width: 375px) {
-  .container {
-    width: 373px;
+.prev,
+.next {
+  background: var(--light-blue, #f7faff);
+  border: none;
+  padding: 8px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slider-nav {
+  display: flex;
+  margin-top: 8px;
+}
+.review-icon {
+  fill: var(--blue-font, #0a224a);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-btn:hover .review-icon,
+.review-btn:focus .review-icon {
+  fill: #061835;
+}
+.review-card {
+  padding: 24px;
+}
+@media (max-width: 767px) {
+  .reviews-list {
+    display: flex;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; /* Вигляд тільки поточного відгуку */
+    transition: transform 0.3s ease-in-out;
+  }
+  .review {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none; /* Початково всі відгуки приховані */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .review.active {
+    display: block; /* Відображаємо поточний відгук */
+    opacity: 1;
+  }
+  .review-text {
+    height: 121px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .reviews-list {
+    display: flex;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; /* Збільшуємо ширину для двох карток */
+    transition: transform 0.3s ease-in-out;
+  }
+  .review {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    flex: 0 0 50%; /* Половина ширини для двох відгуків */
+  }
+  .review.active {
+    opacity: 1;
+  }
+
+  /* Показуємо тільки активні відгуки */
+  .review:not(.active) {
+    display: none;
+  }
+  .review-text {
+    height: 216px;
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
-    width: 766px;
-  }
   .clients-review-2 {
     display: block;
   }
-  .clients-reviews-list {
+  .reviews-list {
     display: flex;
     gap: 16px;
     align-items: center;
     justify-content: center;
   }
-  .clients-reviews-item {
+  .review {
     max-width: 344px;
     margin: 0;
   }
@@ -104,10 +177,13 @@
     width: 189px;
     height: 37px;
   }
+  .slider-nav {
+    gap: 16px;
+  }
 }
 @media screen and (min-width: 1440px) {
-  .container {
-    width: 1438px;
+  .slider-nav {
+    display: none;
   }
   .clients-review-3 {
     display: block;
@@ -115,10 +191,10 @@
   .clients-reviews {
     padding: 60px 0;
   }
-  .clients-reviews-list {
+  .reviews-list {
     gap: 24px;
   }
-  .clients-reviews-item {
+  .review {
     width: 100%;
     max-width: 424px;
     margin: 0;
@@ -130,7 +206,7 @@
   .clients-info {
     margin-bottom: 16px;
   }
-  .clients-reviews-item {
+  .review-card {
     padding: 32px;
   }
 }
