@@ -1,86 +1,113 @@
-<section class="clients-reviews">
+<section class="clients-reviews" id="clients-reviews">
   <div class="container">
     <h2 class="clients-reviews-heading">Clients reviews</h2>
-    <ul class="clients-reviews-list">
-      <li class="clients-reviews-item clients-review-1">
-        <div class="clients-info">
-          <div class="clients-img">
-            <img
-              class="clients-img-png"
-              srcset="
-                ./img/clients-reviews/alexandra-1x.png 1x,
-                ./img/clients-reviews/alexandra-2x.png 2x
-              "
-              src="./img/clients-reviews/alexandra-1x.png"
-              width="48"
-              height="48"
-              alt="Alexandra Dream"
-            />
-          </div>
-          <div>
-            <p class="client-name">Alexandra dream</p>
-            <p class="review-date">1 week ago</p>
-          </div>
-        </div>
-        <p class="review-text">
-          I was blown away by the quality and craftsmanship of the furniture I
-          received from this company. Each piece was unique and beautifully
-          designed, and you can tell that a lot of thought and care goes into
-          every detail.
-        </p>
-      </li>
-      <li class="clients-reviews-item clients-review-2">
-        <div class="clients-info">
-          <div>
-            <img
-              srcset="
-                ./img/clients-reviews/james-1x.png 1x,
-                ./img/clients-reviews/james-2x.png 2x
-              "
-              src="./img/clients-reviews/james-1x.png"
-              width="48"
-              height="48"
-              alt="James Williams"
-            />
-          </div>
-          <div>
-            <p class="client-name">James Williams</p>
-            <p class="review-date">A week ago</p>
-          </div>
-        </div>
-        <p class="review-text">
-          The "Minimal" furniture set is a fantastic addition to my home. It
-          boasts a minimalist design, enhancing the feel and look of my living
-          space. The sturdy construction is worth noting too, which speaks
-          volumes about its durability.
-        </p>
-      </li>
-      <li class="clients-reviews-item clients-review-3">
-        <div class="clients-info">
-          <div>
-            <img
-              srcset="
-                ./img/clients-reviews/emily-1x.png 1x,
-                ./img/clients-reviews/emily-2x.png 2x
-              "
-              src="./img/clients-reviews/emily-1x.png"
-              width="48"
-              height="48"
-              alt="Emily Watson"
-            />
-          </div>
-          <div>
-            <p class="client-name">Emily Watson</p>
-            <p class="review-date">3 week ago</p>
-          </div>
-        </div>
-        <p class="review-text">
-          The "Minimal" furniture set has far exceeded my expectations. The
-          sleek design combined with the high-quality materials have not only
-          added an exceptional aesthetic to my space but also offered an
-          uncompromising standard of comfort.
-        </p>
-      </li>
-    </ul>
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <ul class="reviews-list">
+          <li class="review" data-index="1">
+            <div class="review-card">
+              <div class="clients-info">
+                <div class="clients-img">
+                  <img
+                    class="clients-img-png"
+                    srcset="
+                      ./img/clients-reviews/alexandra-1x.png 1x,
+                      ./img/clients-reviews/alexandra-2x.png 2x
+                    "
+                    src="./img/clients-reviews/alexandra-1x.png"
+                    width="48"
+                    height="48"
+                    alt="Alexandra Dream"
+                  />
+                </div>
+                <div>
+                  <p class="client-name">Alexandra dream</p>
+                  <p class="review-date">1 week ago</p>
+                </div>
+              </div>
+              <p class="review-text">
+                I was blown away by the quality and craftsmanship of the
+                furniture I received from this company. Each piece was unique
+                and beautifully designed, and you can tell that a lot of thought
+                and care goes into every detail.
+              </p>
+            </div>
+          </li>
+          <li class="review" data-index="2">
+            <div class="review-card">
+              <div class="clients-info">
+                <div>
+                  <img
+                    srcset="
+                      ./img/clients-reviews/james-1x.png 1x,
+                      ./img/clients-reviews/james-2x.png 2x
+                    "
+                    src="./img/clients-reviews/james-1x.png"
+                    width="48"
+                    height="48"
+                    alt="James Williams"
+                  />
+                </div>
+                <div>
+                  <p class="client-name">James Williams</p>
+                  <p class="review-date">A week ago</p>
+                </div>
+              </div>
+              <p class="review-text">
+                The "Minimal" furniture set is a fantastic addition to my home.
+                It boasts a minimalist design, enhancing the feel and look of my
+                living space. The sturdy construction is worth noting too, which
+                speaks volumes about its durability.
+              </p>
+            </div>
+          </li>
+          <li class="review" data-index="3">
+            <div class="review-card">
+              <div class="clients-info">
+                <div>
+                  <img
+                    srcset="
+                      ./img/clients-reviews/emily-1x.png 1x,
+                      ./img/clients-reviews/emily-2x.png 2x
+                    "
+                    src="./img/clients-reviews/emily-1x.png"
+                    width="48"
+                    height="48"
+                    alt="Emily Watson"
+                  />
+                </div>
+                <div>
+                  <p class="client-name">Emily Watson</p>
+                  <p class="review-date">3 week ago</p>
+                </div>
+              </div>
+              <p class="review-text">
+                The "Minimal" furniture set has far exceeded my expectations.
+                The sleek design combined with the high-quality materials have
+                not only added an exceptional aesthetic to my space but also
+                offered an uncompromising standard of comfort.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="slider-nav">
+        <button class="prev review-btn" id="prevBtn">
+          <svg class="review-icon" width="24" height="24">
+            <use
+              href="../img/clients-reviews/symbol-defs.svg#icon-pointer-left"
+            ></use>
+          </svg>
+        </button>
+        <button class="next review-btn" id="nextBtn">
+          <svg class="review-icon" width="24" height="24">
+            <use
+              href="../img/clients-reviews/symbol-defs.svg#icon-pointer-right"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="../js/clients-reviews.js"></script>
   </div>
 </section>
