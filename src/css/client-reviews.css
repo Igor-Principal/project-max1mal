@@ -138,15 +138,7 @@
     height: 216px;
   }
 }
-@media screen and (min-width: 375px) {
-  .container {
-    width: 373px;
-  }
-}
 @media screen and (min-width: 768px) {
-  .container {
-    width: 736px;
-  }
   .clients-review-2 {
     display: block;
   }
@@ -190,9 +182,6 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .container {
-    width: 1350px;
-  }
   .slider-nav {
     display: none;
   }
