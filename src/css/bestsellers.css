@@ -40,18 +40,9 @@
   padding-bottom: 64px;
 }
 
-@media screen and (min-width: 375px) {
-  .container {
-    width: 373px;
-  }
-}
+@media screen and (min-width: 375px) {}
 
 @media screen and (min-width: 768px) {
-  .sellers .container {
-    width: 736px;
-
-  }
-
   .sellers-title {
     font-size: 32px;
     line-height: 1.41;
@@ -76,7 +67,6 @@
   .sellers-list {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
     gap: 32px;
   }
 
@@ -100,6 +90,10 @@
     width: 1126px;
   }
 
+  .sellers-main-card,
+  .sellers-item {
+    margin-bottom: 0;
+  }
 
   .sellers-wrap {
     display: flex;
