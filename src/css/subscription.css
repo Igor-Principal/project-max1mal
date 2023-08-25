@@ -52,7 +52,8 @@
   border-color: #0a224a;
 }
 
-.input-error-icon {
+.name-error-icon,
+.email-error-icon {
   fill: #e74a3b;
   position: absolute;
   right: 20px;
@@ -61,7 +62,12 @@
   display: none;
 }
 
-.input-error:invalid {
+.name-error:invalid {
+  color: #e74a3b;
+  border-color: #e74a3b;
+}
+
+.email-error:invalid {
   color: #e74a3b;
   border-color: #e74a3b;
 }
@@ -165,6 +171,10 @@
     margin-bottom: 20px;
   }
 
+  .sub-label {
+    display: inline-block;
+  }
+
   .sub-input {
     width: 536px;
   }
@@ -210,6 +220,7 @@
   }
 
   .sub-label {
+    display: block;
     margin-bottom: 21px;
   }
 
