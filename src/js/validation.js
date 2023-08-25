@@ -1,7 +1,7 @@
 const inputName = document.getElementById("user-name");
 const inputEmail = document.getElementById("user-email");
 const errorNameIcon = document.querySelector(".name-error-icon");
-const errorEmailIcon = document.querySelector(".email-error-icon")
+const errorEmailIcon = document.querySelector(".email-error-icon");
 
 
 inputName.addEventListener("change", function() {
