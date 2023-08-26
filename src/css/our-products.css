@@ -1,5 +1,6 @@
 .our-products {
   padding-bottom: 64px;
+  scroll-margin-top: 88px;
 }
 
 .our-products-title {
@@ -33,6 +34,7 @@
 
   .our-products {
     padding-bottom: 100px;
+    scroll-margin-top: 95px;
   }
 
   .our-products-title {
