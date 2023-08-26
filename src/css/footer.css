@@ -109,7 +109,7 @@ html {
   gap: 16px;
 }
 .footer-social-link {
-  display: block;
+  display: flex;
 }
 .footer-social-icon {
   width: 28px;
