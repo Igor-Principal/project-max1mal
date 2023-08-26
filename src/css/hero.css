@@ -1,17 +1,11 @@
 .hero-section {
-  padding: 140px 0 0 0;
-  margin: 0 auto;
+  padding: 140px 0 0px 0;
+  margin: 88px auto 0 auto;
   background: url(/img/hero/hero-img-mobile.jpg);
   background-position: 54%;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 717px;
-}
-
-.hero-section.hero-section-active {
-  position: relative;
-  top: 88px;
-  left: 0;
 }
 
 .hero-content-one {
@@ -49,8 +43,6 @@
   color: var(--white, #fff);
   font-family: Roboto;
   line-height: 1.33;
-  border: none;
-  outline: none;
   transition: background-color 250ms ease-in-out;
 }
 
@@ -59,9 +51,7 @@
   background-color: #061835;
 }
 
-@media (max-resolution: 767px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (max-resolution: 767px) and (min-resolution: 192dpi) {
   .hero-section {
     background-image: url(/img/hero/hero-img-mobile@2x.jpg);
   }
@@ -72,14 +62,8 @@
     background-image: none;
   }
 
-  .container {
-    max-width: 1047px;
-    padding: 0 32px;
-    width: 100%;
-  }
-
   .hero-section {
-    padding: 62px 0 0 0;
+    padding: 62px 0 100px 0;
     background-image: none;
     min-height: 530px;
   }
@@ -89,9 +73,10 @@
     margin-right: 0;
     margin-bottom: 32px;
     background: url(/img/hero/hero-img-tablet-1.jpg),
-      url(/img/hero/hero-img-2.jpg);
+      url(/img/hero/hero-img-tablet-2.jpg);
     background-repeat: no-repeat;
     background-position: bottom left, 335px;
+    background-size: auto, 371px;
   }
   .hero-heading {
     max-width: 648px;
@@ -115,9 +100,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .hero-section {
+    padding: 64px 0 100px 0;
+  }
   .container {
-    max-width: 1350px;
-    padding: 0 15px;
+    width: 100%;
   }
 
   .hero-content {
@@ -126,7 +113,6 @@
   .hero-content-one {
     margin-bottom: 0px;
     background: url(/img/hero/hero-img-1.jpg), url(/img/hero/hero-img-2.jpg);
-
     background-position: bottom left, 335px;
     background-repeat: no-repeat;
   }
@@ -140,8 +126,8 @@
 @media (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-content-one {
     background-image: url(/img/hero/hero-img-tablet-1@2x.jpg),
-      url(/img/hero/hero-img-2@2x.jpg);
-    background-size: 308px, 648px;
+      url(/img/hero/hero-img-tablet-2@2x.jpg);
+    background-size: 308px, 371px;
     background-position: bottom left, 335px;
   }
 }
