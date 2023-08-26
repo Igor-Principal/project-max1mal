@@ -18,7 +18,12 @@
 :root {
   --blue-font: #0A224A;
   --light-font: #fff;
-  --light-background: #F7FAFF
+  --light-background: #F7FAFF;
+  --gray-dark: #7A7A7A;
+  --gray-medium:#B6B6B6;
+  --gray-light: #D9D9D9;
+  --mistake-color: #E74A3B;
+  --hover-color: #061835;
 }
 
 
