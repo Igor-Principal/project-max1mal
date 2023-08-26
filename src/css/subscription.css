@@ -88,7 +88,7 @@
   width: 25px;
   height: 25px;
   border: 1px solid #b6b6b6;
-  margin-right: 4px;
+  margin-right: 3px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -132,11 +132,6 @@
 /* ========================= MOBILE ===================== */
 
 @media screen and (min-width: 375px) {
-  .sub-section .container {
-    max-width: 375px;
-    padding: 0 16px;
-  }
-
   .sub-check-decor {
     margin-right: 8px;
   }
@@ -147,11 +142,6 @@
 @media screen and (min-width: 768px) {
   .sub-section {
     padding: 100px 0;
-  }
-
-  .sub-section .container {
-    max-width: 768px;
-    padding: 0 32px;
   }
 
   .sub-text-content {
@@ -202,7 +192,7 @@
   }
 
   .sub-section .container {
-    max-width: 1160px;
+    max-width: 1126px;
     display: flex;
     column-gap: 100px;
   }
