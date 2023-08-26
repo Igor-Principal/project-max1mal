@@ -19,6 +19,9 @@ html {
   height: 16px;
   fill: var(--light-font, #fff);
 }
+.footer-info {
+  margin-bottom: 64px;
+}
 .footer-nav {
   margin-bottom: 36px;
 }
@@ -53,22 +56,17 @@ html {
   transform: scaleX(1);
   outline: none;
 }
-.footer-address {
-  margin-bottom: 64px;
-}
 .footer-address-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-
 .footer-address-list:first-child {
   margin-bottom: 35px;
 }
 .footer-address-item-mail {
   display: none;
 }
-
 .footer-address-item {
   position: relative;
 }
@@ -109,6 +107,9 @@ html {
 .footer-social-list {
   display: inline-flex;
   gap: 16px;
+}
+.footer-social-link {
+  display: block;
 }
 .footer-social-icon {
   width: 28px;
@@ -168,6 +169,7 @@ html {
     position: absolute;
     top: 36px;
     left: 400px;
+    margin-bottom: 0;
   }
   .footer-nav-list {
     gap: 16px;
@@ -233,11 +235,13 @@ html {
     flex-direction: row;
     gap: 30px;
   }
+  .footer-info {
+    margin-bottom: 35px;
+  }
   .footer-address {
     display: inline-flex;
     flex-direction: row;
     gap: 87px;
-    margin-bottom: 35px;
   }
   .footer-address-list:not(:last-child) {
     margin-bottom: 0;
