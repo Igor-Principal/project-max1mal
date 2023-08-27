@@ -73,11 +73,11 @@ html {
 
 .footer-social {
   position: absolute;
-  right: 16px;
-  top: 36px;
+  right: 15px;
+  top: 0;
 }
 .footer-social-list {
-  display: inline-flex;
+  display: flex;
   gap: 16px;
 }
 .footer-social-link {
@@ -131,7 +131,7 @@ html {
   .footer-nav {
     padding: 8px;
     position: absolute;
-    top: 36px;
+    top: 0;
     left: 400px;
     margin-bottom: 0;
   }
@@ -166,10 +166,6 @@ html {
     font-size: 19px;
   }
 
-  .footer-social {
-    right: 36px;
-    top: 32px;
-  }
   .footer-social-icon {
     width: 40px;
     height: 40px;
@@ -256,10 +252,6 @@ html {
     outline: none;
   }
 
-  .footer-social {
-    right: 60px;
-    top: 36px;
-  }
   .footer-social-link:hover .footer-social-icon,
   .footer-social-link:focus .footer-social-icon {
     fill: #0a224a;
