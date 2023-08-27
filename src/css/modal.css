@@ -1,0 +1,104 @@
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.8);
+  top: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 300px;
+  min-height: 450px;
+  border-radius: 1px;
+  background-color: var(--light-font);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 80px 10px 16px;
+}
+
+.is-hidden-modal {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) rotate(360deg);
+}
+
+.modal-close-btn {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  stroke: var(--blue-font);
+  border: none;
+  background-color: transparent;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modal-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* ========================== TABLET ====================== */
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 350px;
+    min-height: 520px;
+    padding: 90px 16px 16px;
+  }
+
+  .modal-title {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .modal-text {
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+}
+
+/* ========================== DESCTOP ====================== */
+
+@media screen and (min-width: 1440px) {
+  .modal {
+    width: 370px;
+    min-height: 600px;
+    padding: 100px 16px 16px;
+  }
+
+  .modal-title {
+    margin-bottom: 60px;
+  }
+
+  .modal-text {
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+}
