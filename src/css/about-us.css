@@ -104,6 +104,7 @@ line-height: 1.5;
 
 @media screen and (min-width: 1440px) {
     .about-us {
+        align-items: center;
         scroll-margin-top: 95px;
     }
     .about-us .container {
@@ -114,6 +115,7 @@ line-height: 1.5;
     
     .about-us-container {
         width: 100%;
+        margin-bottom: 0;
         max-width: 760px;
         padding: 36px 69px 34px;
         
