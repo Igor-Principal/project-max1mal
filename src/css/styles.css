@@ -14,6 +14,7 @@
 @import url('./client-reviews.css');
 @import url('./subscription.css');
 @import url('./footer.css');
+@import url('./modal.css');
 
 :root {
   --blue-font: #0a224a;
