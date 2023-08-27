@@ -4,12 +4,12 @@ html {
 
 .footer-section {
   background-color: var(--blue-font, #0a224a);
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .footer-container {
   position: relative;
-  padding-top: 36px;
-  padding-bottom: 36px;
 }
 .footer-nav-logo {
   display: inline-flex;
@@ -115,7 +115,7 @@ html {
 /* --------------------- */
 
 @media screen and (min-width: 768px) {
-  .footer-container {
+  .footer-section {
     padding-top: 36px;
     padding-bottom: 36px;
   }
@@ -186,7 +186,7 @@ html {
 /* --------------------- */
 
 @media screen and (min-width: 1440px) {
-  .footer-container {
+  .footer-section {
     padding-top: 36px;
     padding-bottom: 36px;
   }
