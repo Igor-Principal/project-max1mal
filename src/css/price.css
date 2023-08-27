@@ -10,7 +10,7 @@
     line-height: 1.5;/* 150% */
     text-transform: uppercase;
     position: relative;
-    transition: margin-left 500ms linear;
+    transition: margin-left 250ms linear;
 }
 
 .prices-item-text {
@@ -56,14 +56,16 @@
     height: 2px;
     background-color: #0A224A;
     opacity: 0;
-    transition: opacity 500ms linear;
+    transition: opacity 250ms linear;
 }
 
-.prices-item-link:hover::before {
+.prices-item-link:hover::before ,
+.prices-item-link:focus::before{
     opacity: 1;
 }
 
-.prices-item-title:hover {
+.prices-item-title:hover,
+.prices-item-link:focus .prices-item-title {
     margin-left: 50px;
 }
 
