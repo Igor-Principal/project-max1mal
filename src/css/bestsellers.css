@@ -38,6 +38,7 @@
 
 .sellers {
   padding-bottom: 64px;
+  scroll-margin-top: 88px;
 }
 
 @media screen and (min-width: 375px) {}
@@ -88,6 +89,10 @@
 @media screen and (min-width: 1440px) {
   .sellers .container {
     width: 1126px;
+  }
+
+  .sellers {
+    scroll-margin-top: 95px
   }
 
   .sellers-main-card,
