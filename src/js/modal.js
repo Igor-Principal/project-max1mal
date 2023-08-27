@@ -8,7 +8,16 @@
 
   refs.openModalBtn.addEventListener("click", function(event) {
     event.preventDefault();
-    toggleModal();
+
+    const requiredFields = Array.from(refs.form.querySelectorAll("[required]"));
+    const isValid = requiredFields.every(field => field.checkValidity());
+
+    const emailField = refs.form.querySelector("[type='email']");
+    const isEmailValid = emailField.checkValidity();
+
+    if (isValid && isEmailValid) {
+      toggleModal();
+    }
   });
 
   refs.closeModalBtn.addEventListener("click", function() {
