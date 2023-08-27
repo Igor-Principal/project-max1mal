@@ -1,5 +1,6 @@
 .prices {
     padding: 64px 0;
+    scroll-margin-top: 88px;
 }
 
 .prices-item-title {
@@ -8,6 +9,8 @@
     font-weight: 400;
     line-height: 1.5;/* 150% */
     text-transform: uppercase;
+    position: relative;
+    transition: margin-left 500ms linear;
 }
 
 .prices-item-text {
@@ -45,26 +48,23 @@
 }
 
 
-.prices-item-title:before {
+.prices-item-link:before {
     content: "";
     display: inline-block;
-    position: relative;
-    width: 0;
+    position: absolute;
+    width: 30px;
     height: 2px;
-    bottom: 12px;
-    text-align: center;
     background-color: #0A224A;
     opacity: 0;
-    margin-right: 0;
-    transition: width 500ms linear, opacity 500ms linear, margin-right 500ms linear;
+    transition: opacity 500ms linear;
 }
 
-
-
-.prices-item-title:hover::before {
-    margin-right: 20px;
-    width: 30px;
+.prices-item-link:hover::before {
     opacity: 1;
+}
+
+.prices-item-title:hover {
+    margin-left: 50px;
 }
 
 
