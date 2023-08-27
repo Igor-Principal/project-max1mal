@@ -118,7 +118,7 @@ line-height: 1.5;
         width: 100%;
         max-width: 760px;
         padding: 36px 69px 34px;
-        
+        margin-bottom: 0;
     }
     .about-us-subtitle {
         font-size: 32px;
