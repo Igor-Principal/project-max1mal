@@ -29,6 +29,8 @@
   });
 })();
 
+
+
 (() => {
   const burgerBtn = document.querySelector('.burger-btn');
   const closeMenuBtn = document.querySelector('.js-close-menu');
@@ -53,5 +55,22 @@
     let expanded = heroSection.getAttribute('aria-expanded') === 'true' || 'false';
     heroSection.classList.toggle('hero-section-active');
   })
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuLinks = document.querySelectorAll('.burger-nav-link');
+    const burgerMenu = document.getElementById('burger'); 
+
+    menuLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        burgerMenu.classList.remove('is-open'); 
+        
+        headerLock.classList.toggle('header-lock-active');
+      });
+     });
+  });
   
 })();
+
+
+ 
+ 

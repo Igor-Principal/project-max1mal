@@ -101,8 +101,9 @@
 
 @media screen and (min-width: 1440px) {
   .hero-section {
-    padding: 64px 0 100px 0;
+    margin: 0;
   }
+
   .container {
     width: 100%;
   }
