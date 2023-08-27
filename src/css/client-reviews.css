@@ -93,7 +93,7 @@
     margin: 0;
     list-style: none;
     width: 100%; /* Вигляд тільки поточного відгуку */
-    transition: transform 0.3s ease-in-out;
+    transition: transform 250ms ease-in-out;
   }
   .review {
     margin: 0;
@@ -101,7 +101,7 @@
     list-style: none;
     display: none; /* Початково всі відгуки приховані */
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 250ms ease-in-out;
   }
   .review.active {
     display: block; /* Відображаємо поточний відгук */
@@ -119,14 +119,14 @@
     margin: 0;
     list-style: none;
     width: 100%; /* Збільшуємо ширину для двох карток */
-    transition: transform 0.3s ease-in-out;
+    transition: transform 250ms ease-in-out;
   }
   .review {
     margin: 0;
     padding: 0;
     list-style: none;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 250ms ease-in-out;
     flex: 0 0 50%; /* Половина ширини для двох відгуків */
   }
   .review.active {
