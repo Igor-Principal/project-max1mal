@@ -1,6 +1,7 @@
 .clients-reviews {
   padding: 36px 0;
   background: var(--light-blue, #f7faff);
+  scroll-margin-top: 88px;
 }
 .clients-reviews-heading {
   color: var(--blue-font, #0a224a);
@@ -193,6 +194,7 @@
   }
   .clients-reviews {
     padding: 60px 0;
+    scroll-margin-top: 95px;
   }
   .reviews-list {
     gap: 24px;
