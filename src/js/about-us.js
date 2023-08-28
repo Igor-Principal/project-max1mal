@@ -1,19 +1,42 @@
-document.addEventListener("DOMContentLoaded", () => {
-    function counter(id, start, end, duration) {
-     let obj = document.getElementById(id),
-      current = start,
-      range = end - start,
-      increment = end > start ? 1 : -1,
-      step = Math.abs(Math.floor(duration / range)),
-      timer = setInterval(() => {
-       current += increment;
-       obj.textContent = current;
-       if (current == end) {
-        clearInterval(timer);
-       }
-      }, step);
+function animateValue(element, start, end, duration, symbol = "") {
+  var range = end - start;
+  var startTime = new Date().getTime();
+  function updateValue() {
+    var currentTime = new Date().getTime();
+    var elapsed = currentTime - startTime;
+    var progress = elapsed / duration;
+    if (progress > 1) progress = 1;
+    var value = start + range * progress;
+    element.textContent = Math.round(value) + symbol;
+    if (progress < 1) {
+      requestAnimationFrame(updateValue);
     }
-    counter("count1", 0, 5, 3000);
-    counter("count2", 49, 100, 5000);
-    counter("count3", 251, 500, 5000);
-});
+  }
+  updateValue();
+}
+function startAnimation() {
+  var elementsToAnimate = document.querySelectorAll(".animate-number");
+  elementsToAnimate.forEach(function (element) {
+    var startNumber = parseInt(element.textContent);
+    var endNumber = parseInt(element.getAttribute("data-end"));
+    var symbol = element.getAttribute("data-symbol");
+    animateValue(element, startNumber, endNumber, 2000, symbol);
+  });
+}
+function handleScroll() {
+  var section = document.querySelector(".about-us");
+  var sectionTop = section.getBoundingClientRect().top;
+  var viewportHeight = window.innerHeight;
+  if (sectionTop < viewportHeight / 2) {
+    startAnimation();
+    window.removeEventListener("scroll", handleScroll);
+  }
+}
+function handleHashChange() {
+  var hash = window.location.hash;
+  if (hash === "#about") {
+    startAnimation();
+  }
+}
+window.addEventListener("scroll", handleScroll);
+window.addEventListener("hashchange", handleHashChange);
